@@ -24,7 +24,7 @@ def decrypt(cipher, key):
   return ''.join([ chr((( modinv(key[0], 26)*(ord(c) - ord('A') - key[1])) % 26) + ord('A')) for c in cipher ]) 
 
 def main(): 
-  text = 'RAYYAALIKAPUTRI'
+  text = 'NURAFIIFALMAS'
   key = [3, 5] 
 
   # Memanggil fungsi enkripsi
